@@ -1,8 +1,8 @@
 // Copyright 2025 UNN-CS
 
-#include "alg.h"
-#include <cstdint>
 #include <gtest/gtest.h>
+#include <cstdint>
+#include "alg.h"
 
 TEST(st1, checkPrimeTest1) {
   EXPECT_TRUE(checkPrime(2));
@@ -61,13 +61,13 @@ TEST(st1, nextPrimeTest3) {
 
 TEST(st1, sumPrimeTest1) {
   uint64_t res = sumPrime(10);
-  uint64_t expected = 17; // 2+3+5+7=17
+  uint64_t expected = 17;
   EXPECT_EQ(expected, res);
 }
 
 TEST(st1, sumPrimeTest2) {
   uint64_t res = sumPrime(20);
-  uint64_t expected = 77; // 2+3+5+7+11+13+17+19=77
+  uint64_t expected = 77;
   EXPECT_EQ(expected, res);
 }
 
@@ -80,5 +80,5 @@ TEST(st1, sumPrimeTest3) {
 TEST(st1, sumPrimeTest4) {
   EXPECT_EQ(sumPrime(2), 0);
   EXPECT_EQ(sumPrime(3), 2);
-  EXPECT_EQ(sumPrime(5), 5); // 2+3=5
+  EXPECT_EQ(sumPrime(5), 5);
 }
